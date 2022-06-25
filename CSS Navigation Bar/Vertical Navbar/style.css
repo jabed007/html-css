@@ -4,6 +4,15 @@ ul {
   padding: 0;
   background: #ddd;
   width: 200px;
+  border: 1px solid #555;
+}
+
+li {
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
 }
 
 li a {
@@ -11,6 +20,7 @@ li a {
   padding: 8px 16px;
   text-decoration: none;
   color: #000;
+  text-align: center;
 }
 
 li a.active {
