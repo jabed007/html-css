@@ -18,6 +18,11 @@ select {
   display: inline-block;
   border: 1px solid #ccc;
   border-radius: 4px;
+  outline: none;
+}
+
+input[type="text"]:focus {
+  border: 3px solid gold;
 }
 
 input[type="submit"] {
