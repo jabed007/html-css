@@ -1,0 +1,48 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
+
+/* Heading */
+
+.header {
+  padding: 30px;
+  text-align: center;
+  background-color: #fff;
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Top Navigation Bar */
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+}
+
+.topnav a {
+  text-decoration: none;
+  text-align: center;
+  color: #fff;
+  display: block;
+  float: left;
+  padding: 12px 20px;
+}
+
+.topnav a:hover {
+  background-color: #f1f1f1;
+  color: #333;
+}
+
+.topnav .right {
+  float: right;
+}
