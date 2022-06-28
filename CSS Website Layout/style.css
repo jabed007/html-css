@@ -56,3 +56,18 @@ body {
     width: 100%;
   }
 }
+
+/* Tip: To create a 2-column layout, change the width to 50%. To create a 4-column layout, use 25%, etc.
+
+Tip: Do you wonder how the @media rule works? Read more about it in our CSS Media Queries chapter.
+
+Tip: A more modern way of creating column layouts, is to use CSS Flexbox. However, it is not supported in Internet Explorer 10 and earlier versions. If you require IE6-10 support, use floats (as shown above).
+
+To learn more about the Flexible Box Layout Module, read our CSS Flexbox chapter. */
+
+/* Style the footer */
+.footer {
+  background-color: #f1f1f1;
+  padding: 10px;
+  text-align: center;
+}
