@@ -12,10 +12,15 @@ body {
 
 /* Heading */
 
-.header {
+.header,
+.footer {
   padding: 30px;
   text-align: center;
   background-color: #fff;
+}
+
+.footer {
+  background-color: #ddd;
 }
 
 .header h1 {
