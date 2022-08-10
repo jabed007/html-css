@@ -1,30 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>CSS Position</title>
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position</title>
+    <style>
+      img {
+        width: 100%;
+        height: auto;
+        opacity: 0.3;
+      }
 
-    div.relative {
-      border: 3px solid #73AD21;
-      position: relative;
-      left: 30px;
-      top: 30px
-    }
-  </style>
-</head>
-<body>
-  <h2>position: relative;</h2>
+      .container {
+        position: relative;
+      }
 
-  <p>An element with position: relative; is positioned relative to its normal position:</p>
+      .center {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Image Text</h2>
+    <p>Add some text to an image in the top left corner:</p>
 
-  <div class="relative">This div element has position: relative</div>
-</body>
+    <div class="container">
+      <img src="image/img_5terre_wide.jpg" alt="Cinque Terre" />
+      <div class="center">Top Left</div>
+    </div>
+  </body>
 </html>
