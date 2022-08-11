@@ -13,15 +13,49 @@
         z-index: -1;
       } */
 
+      /* Without z-index */
+
       .container {
         position: relative;
       }
 
       .black-box {
+        position: relative;
         border: 2px solid black;
         height: 100px;
+        margin: 30px;
+      }
+
+      .gray-box {
+        position: absolute;
+        background: lightgray;
+        height: 60px;
+        width: 70%;
+        left: 50px;
+        top: 50px;
+      }
+
+      .green-box {
+        position: absolute;
+        background: lightgreen;
+        width: 35%;
+        left: 270px;
+        top: -15px;
+        height: 100px;
+      }
+
+      /* With z-index */
+
+      /* .container {
         position: relative;
+        border: 3px solid red;
+      }
+
+      .black-box {
+        border: 2px solid black;
+        height: 100px;
         z-index: 1;
+        margin: 0 auto;
       }
 
       .gray-box {
@@ -42,7 +76,7 @@
         top: -15px;
         left: 270px;
         z-index: 2;
-      }
+      } */
     </style>
   </head>
   <body>
@@ -64,10 +98,20 @@
       lower stack order.
     </p>
 
+    <!-- Without z-index -->
+
     <div class="container">
       <div class="black-box">Black box (z-index: 1)</div>
       <div class="gray-box">Gray box (z-index: 3)</div>
       <div class="green-box">Green box (z-index: 2)</div>
     </div>
+
+    <!-- With z-index -->
+
+    <!-- <div class="container">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 3)</div>
+      <div class="green-box">Green box (z-index: 2)</div>
+    </div> -->
   </body>
 </html>
