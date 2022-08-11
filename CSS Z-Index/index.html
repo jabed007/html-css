@@ -6,21 +6,68 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-      img {
+      /* img {
         position: absolute;
         top: 0;
         left: 0;
         z-index: -1;
+      } */
+
+      .container {
+        position: relative;
+      }
+
+      .black-box {
+        border: 2px solid black;
+        height: 100px;
+        position: relative;
+        z-index: 1;
+      }
+
+      .gray-box {
+        background-color: lightgray;
+        height: 60px;
+        width: 70%;
+        position: absolute;
+        top: 50px;
+        left: 50px;
+        z-index: 3;
+      }
+
+      .green-box {
+        background-color: lightgreen;
+        width: 35%;
+        height: 100px;
+        position: absolute;
+        top: -15px;
+        left: 270px;
+        z-index: 2;
       }
     </style>
   </head>
   <body>
-    <h1>This is a heading</h1>
+    <!-- <h1>This is a heading</h1>
     <img src="image/img_tree.png" alt="" />
     <p>
       Because the image has a z-index of -1, it will be placed behind the text.
-    </p>
+    </p> -->
 
     <!-- Note: z-index only works on positioned elements (position: absolute, position: relative, position: fixed, or position: sticky) and flex items (elements that are direct children of display: flex elements). -->
+
+    <!-- Another Z-Index Example -->
+    <!-- Here we see that an element with greater stack order is always above an element with a lower stack order: -->
+
+    <h1>Z-index Example</h1>
+
+    <p>
+      An element with greater stack order is always above an element with a
+      lower stack order.
+    </p>
+
+    <div class="container">
+      <div class="black-box">Black box (z-index: 1)</div>
+      <div class="gray-box">Gray box (z-index: 3)</div>
+      <div class="green-box">Green box (z-index: 2)</div>
+    </div>
   </body>
 </html>
