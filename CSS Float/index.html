@@ -41,14 +41,13 @@
         clear: both;
       } */
 
-      * {
+      /* * {
         box-sizing: border-box;
       }
 
       .img-container {
         width: 33.33%;
         float: left;
-        /* padding: 5px; */
       }
 
       .container {
@@ -60,6 +59,53 @@
         content: "";
         display: block;
         clear: both;
+      } */
+
+      * {
+        box-sizing: border-box;
+      }
+
+      .clearfix::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .header,
+      .footer {
+        background-color: grey;
+        padding: 15px;
+        color: #fff;
+      }
+
+      .column {
+        float: left;
+        padding: 15px;
+      }
+
+      .menu {
+        width: 25%;
+      }
+
+      .content {
+        width: 75%;
+      }
+
+      .menu ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .menu li {
+        background-color: #33b5e5;
+        margin-bottom: 8px;
+        padding: 8px;
+      }
+
+      .menu li a {
+        color: #fff;
+        text-decoration: none;
       }
     </style>
   </head>
@@ -93,7 +139,7 @@
       effect.
     </p> -->
 
-    <h2>Images Side by Side</h2>
+    <!-- <h2>Images Side by Side</h2>
     <p>Float images side by side:</p>
     <div class="clearfix container">
       <div class="img-container">
@@ -111,6 +157,34 @@
       and that we add the box-sizing property to make sure that the image
       container doesn't break due to extra padding. Try to remove this code to
       see the effect.
-    </p>
+    </p> -->
+
+    <div class="header">
+      <h1>Chania</h1>
+    </div>
+    <div class="clearfix">
+      <div class="column menu">
+        <ul>
+          <li><a href="#">The Flight</a></li>
+          <li><a href="#">The City</a></li>
+          <li><a href="#">The Island</a></li>
+          <li><a href="#">The Food</a></li>
+        </ul>
+      </div>
+      <div class="column content">
+        <h2>The City</h2>
+        <p>
+          Chania is the capital of the Chania region on the island of Crete. The
+          city can be divided in two parts, the old town and the modern city.
+        </p>
+        <p>
+          You will learn more about web layout and responsive web pages in a
+          later chapter.
+        </p>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Footer Text</p>
+    </div>
   </body>
 </html>
